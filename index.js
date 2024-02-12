@@ -9,7 +9,7 @@ function checkPasswords() {
     console.log(ename);
     let clearance;
     
-    fetch('/data/users.json')
+    fetch('users.json')
         .then(response => response.json())
         .then(data => {
             for (var i = 0; i < data.length; i++) {
