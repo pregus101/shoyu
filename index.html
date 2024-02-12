@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoyu Empire</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="https://kit.fontawesome.com/4541982187.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Shoyu Empire</h1>
+        <div class="signin" id="signinbox">
+            <!-- Do not change anything in signin div-->
+            <div class="signinbox">
+                <div class="si-container">
+                    <div class="usr-in-div">
+                        <input type="text" id="username" required
+                            placeholder="Username"><br><br>
+                    </div>
+                    <div class="pwd-in-div">
+                        <input type="password" id="password" required
+                            placeholder="Password"><br><br>
+                        <button id="showhidepwd" class="show-hide"
+                            onclick="togglepwdvis()"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <button class="login-btn" onclick="checkPasswords()">Login</button>
+                    <p id="incorrect"></p>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage" id="mainpage">
+
+            <!-- h2 = heading
+                p = basic paragraph text
+                h3 = smaller heading
+                items in <ul> with the tag <li> will show with a bullet point, shown as basic paragraph text
+            -->
+            <h2>Sample text</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eum.</p>
+            <div class="sampleoptions">
+                <div id="samplecontainer">
+                    <h3>Stock sample:</h3>
+                    <ul>
+                        <li>Ammo - 40</li>
+                        <li>Cars - 32</li>
+                        <li>Tools - 21</li>
+                    </ul>
+                </div>
+                <div id="samplecontainer">
+                    <h3>Info sample:</h3>
+                    <ul>
+                        <li>Empire - Enemy</li>
+                        <li>Empire - Ally</li>
+                        <li>Empire - Neutral</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="samplesecure">
+                <div class="display">
+                    <p>Higher Clearance Needed!</p>
+                </div>
+                <div class="needsclearance">
+                    <p>Classified info sample:</p>
+                    <ul>
+                        <li>classified</li>
+                        <li>classified</li>
+                        <li>classified</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
