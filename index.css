@@ -8,7 +8,7 @@ h1 {
 
 body, input, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(160, 160, 160);
+    color: rgb(51, 238, 14);
 }
 
 input {
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(72, 255, 0);
 }
 
 .mainpage {
@@ -61,7 +61,7 @@ button:hover {
     flex-direction: row;
     height: min-content;
     align-items: center;
-    border-bottom: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(102, 255, 0);
     width: 260px;
 }
 
