@@ -8,11 +8,11 @@ h1 {
 
 body, input, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(60, 90, 60);
+    color: rgb(110, 110, 110);
 }
 
 input {
-    background-color: rgb(60, 90, 60);
+    background-color: rgb(60, 60, 60);
     border: none;
     outline: none;
     font-size: larger;
@@ -20,7 +20,7 @@ input {
 
 button {
     cursor: pointer;
-    background-color: rgb(60, 90, 60);
+    background-color: rgb(60, 60, 60);
     border: none;
     border-radius: 5px;
     font-size: larger;
@@ -61,7 +61,7 @@ button:hover {
     flex-direction: row;
     height: min-content;
     align-items: center;
-    border-bottom: 2px solid rgb(60, 60, 60);
+    border-bottom: 2px solid rgb(100, 100, 100);
     width: 260px;
 }
 
