@@ -61,3 +61,7 @@ function togglepwdvis() {
     }
     
 }
+
+function signOut() {
+    location.reload();
+}

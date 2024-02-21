@@ -69,3 +69,9 @@ button:hover {
     margin-top: 10px;
     padding: 5px;
 }
+
+.signout {
+    border: 2px solid rgb(167, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
