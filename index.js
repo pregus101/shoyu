@@ -7,9 +7,16 @@ function checkPasswords() {
 
     ename = ename.toLowerCase();
     console.log(ename);
+    console.log(epass);
     let clearance;
+
+    epass = sha256(epass);
+    epass.then((data) => epass = data);
+    console.log(epass);
     
-    fetch('https://raw.githubusercontent.com/pickelbyte3/shoyu-data/main/users.json?token=GHSAT0AAAAAACOTFOQ6FZIZMGNC773C4HSIZOZBG5Q')
+    console.log(epass);
+    
+    fetch('users.json')
         .then(response => response.json())
         .then(data => {
             for (var i = 0; i < data.length; i++) {
@@ -60,6 +67,15 @@ function togglepwdvis() {
         togglebtn.innerHTML = '<i class="fa-solid fa-eye"></i>';
     }
     
+}
+
+async function sha256(message) {
+    const msgBuffer = new TextEncoder().encode(message);                    
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
 }
 
 function signOut() {
