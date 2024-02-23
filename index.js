@@ -9,7 +9,7 @@ function checkPasswords() {
     console.log(ename);
     let clearance;
     
-    fetch('users.json')
+    fetch('https://raw.githubusercontent.com/pickelbyte3/shoyu-data/main/users.json?token=GHSAT0AAAAAACOTFOQ6FZIZMGNC773C4HSIZOZBG5Q')
         .then(response => response.json())
         .then(data => {
             for (var i = 0; i < data.length; i++) {
